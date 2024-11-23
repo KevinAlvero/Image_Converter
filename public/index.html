@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload and Transform Your Image</h1>
+        <form id="uploadForm">
+            <label for="image">Choose an Image:</label>
+            <input type="file" id="image" accept="image/*" required>
+
+            <label for="action">Choose an option:</label>
+            <select id="action" required>
+                <option value="grayscale">Grayscale</option>
+                <option value="blur">Blur</option>
+            </select>
+
+            <button type="button" id="processButton">Proses</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
